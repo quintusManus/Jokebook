@@ -1,0 +1,16 @@
+{
+    "name": "jokebook",
+    "version": "1.0.0",
+    "description": "CSC 372-01 Jokebook assignment with Node/Express/SQLite",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "Benjamin Woods",
+    "license": "",
+    "dependencies": {
+      "express": "^4.18.2",
+      "sqlite3": "^5.1.2"
+    }
+  }

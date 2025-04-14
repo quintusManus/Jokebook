@@ -1,0 +1,62 @@
+<!--
+  Name: Benjamin Woods
+  Date: 04.14.2025
+  CSC 372-01
+
+  This is a basic landing page for the Jokebook assignment (extra credit).
+  It displays a random joke, lists categories, can load jokes by category,
+  fetch external jokes automatically if category not found, and can add new jokes.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jokebook</title>
+</head>
+<body>
+  <h1>Jokebook</h1>
+
+  <!-- Random Joke on page load -->
+  <section>
+    <h2>Random Joke</h2>
+    <div id="random-joke"></div>
+  </section>
+
+  <!-- List categories, choose one, get jokes -->
+  <section>
+    <h2>Categories</h2>
+    <button id="btnLoadCategories">Load Categories</button>
+    <ul id="category-list"></ul>
+
+    <h3>Search for a Category</h3>
+    <input type="text" id="search-category" placeholder="Type category" />
+    <input type="number" id="search-limit" placeholder="Limit" />
+    <button id="btnSearchCategory">Get Jokes</button>
+
+    <ul id="joke-list"></ul>
+  </section>
+
+  <!-- Add new joke form -->
+  <section>
+    <h2>Add a New Joke</h2>
+    <form id="new-joke-form">
+      <label>Category:
+        <input type="text" name="category" id="category-field" required />
+      </label>
+      <br />
+      <label>Setup:
+        <input type="text" name="setup" id="setup-field" required />
+      </label>
+      <br />
+      <label>Delivery:
+        <input type="text" name="delivery" id="delivery-field" required />
+      </label>
+      <br />
+      <button type="submit">Add Joke</button>
+    </form>
+    <p id="add-result"></p>
+  </section>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
